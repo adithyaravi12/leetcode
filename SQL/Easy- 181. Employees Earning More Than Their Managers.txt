@@ -1,0 +1,3 @@
+# Write your MySQL query statement below
+# select name as Employee from Employee where managerId is not null and (select max(salary) from employee)
+select table2.name as Employee from employee table1 join employee table2 on table1.id = table2.managerId where table1.salary < table2.salary;
